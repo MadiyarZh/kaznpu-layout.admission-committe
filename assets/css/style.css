@@ -42,7 +42,7 @@ html {
 
 header {
     width: 100%;
-    height: 100px;
+    height: 75px;
     background-color: rgb(0 0 0 / 61%);
 }
 
@@ -63,7 +63,7 @@ header {
 label[for="ham-menu"] {
   display: block;
   position: fixed;
-  top: 20px;
+  top: 7px;
   left: 40px;
   z-index: 999;
   width: 60px;
@@ -98,13 +98,10 @@ label[for="ham-menu"] {
   cursor: pointer;
   color: #ffffff;
   line-height: 42px;
-  margin: 20px 0px;
+  margin: 10px 0px;
   text-decoration: none;
+  display: block;
 }
-/* .main_menu.opened label {
-  background-color: transparent;
-  border-color: var(--dark-green);
-} */
 .main_menu.opened div.ham-menu {
   transform: translate(-40px);
   visibility: visible;
@@ -197,14 +194,6 @@ label[for="ham-menu"] {
   padding: 7px;
   color: var(--icon-hover-bg);
 }
-/* .main_menu a::after {
-  content: "\e806";
-  display: inline-block;
-  font-family: fontello;
-  padding: 5px;
-  font-size: 1.6rem;
-  transform: rotate(-90deg);
-} */
 .text {
   font-size: 2.5rem;
   line-height: 1.5em;
