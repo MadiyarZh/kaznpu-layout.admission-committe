@@ -4,7 +4,7 @@ $(document).ready(function (){
         var w = $(window).width(); // Получаем ширину окна
 
         if (w >= 767) {
-            var top_position = 100;
+            var top_position = 75;
         } else {
             var top_position = 60;
         }
@@ -23,7 +23,7 @@ $(document).ready(function (){
         var degree = $(this).attr("data-menu");
 
         if (w >= 767) {
-            var top_position = 100;
+            var top_position = 75;
         } else {
             var top_position = 60;
         }
