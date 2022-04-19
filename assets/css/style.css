@@ -731,9 +731,6 @@ header .ham-menu .social_icons {
     text-align: center;
   }
 
-  .online-submission-documents {
-    padding: 30px 50px;
-  }
   .video-instructions .thumb-wrap {
     height: 400px;
   }
@@ -813,6 +810,8 @@ header .ham-menu .social_icons {
   }
   .banner>.caption>.info>h1 {
     font-size: 26px;
+    max-width: 80%;
+    margin: auto;
   }
   .banner>.caption>.info>.date, 
   .banner>.caption>.info>.address {
@@ -844,15 +843,12 @@ header .ham-menu .social_icons {
     width: 50%;
   }
 
-  /*  */
+  /* online-submission */
   .online-submission-documents {
-    padding: 20px;
-  }
-  .online-submission-documents .submission {
-    height: 300px;
+    height: 400px;
   }
   .online-submission-documents .submission .submission-wrapper h4 {
-    font-size: 24px;
+    font-size: 21px;
   }
 
 
