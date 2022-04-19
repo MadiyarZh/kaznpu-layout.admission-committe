@@ -404,16 +404,25 @@ label[for="ham-menu"] {
 /* Онлайн подача документов */
 
 .online-submission-documents {
-  padding: 30px 50px 70px;
+  height: 500px;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
 }
 
 .online-submission-documents .submission {
-  height: 500px;
   background: url(../img/submission.jpg) no-repeat;
-  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 20px;
-  position: relative;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+  color: white;
+  text-align: center;
+  display: table;
 }
 
 .online-submission-documents .submission .submission-wrapper {
