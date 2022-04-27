@@ -7,7 +7,7 @@
     --alpha-green: rgba(33, 96, 47, 0.51);
     --icon-hover-color: #344a39;
     --icon-hover-bg: #709680;
-    --text-color: #616161;
+    --text-color: #000000;
     --border-color: #709680;
     --heading-color: #344a39;
     --box-shadow-color: #b5b5ac;
@@ -185,14 +185,14 @@ label[for="ham-menu"] {
   line-height: 1.5em;
   word-spacing: 0.5em;
   letter-spacing: 0.1em;
-  font-family: "OpenSansCondensed-Light";
+  font-family: sans-serif;
 }
 .main_menu a {
   font-size: 1.6rem;
   line-height: 1.5em;
   word-spacing: 0.5em;
   letter-spacing: 0.1em;
-  font-family: "OpenSansCondensed-Light";
+  font-family: sans-serif;
   display: inline;
   font-weight: bold;
   padding: 7px;
@@ -203,14 +203,14 @@ label[for="ham-menu"] {
   line-height: 1.5em;
   word-spacing: 0.5em;
   letter-spacing: 0.1em;
-  font-family: "OpenSansCondensed-Bold", sans-serif;
+  font-family: sans-serif;
 }
 .title {
   font-size: 3rem;
   line-height: 1.5em;
   word-spacing: 0.5em;
   letter-spacing: 0.1em;
-  font-family: "OpenSansCondensed-Bold", sans-serif;
+  font-family: sans-serif;
   color: var(--icon-hover-bg);
   padding: 10px;
 }
@@ -219,7 +219,7 @@ label[for="ham-menu"] {
   line-height: 1.5em;
   word-spacing: 0.5em;
   letter-spacing: 0.1em;
-  font-family: "Patua One";
+  font-family: sans-serif;
 }
 .centre-text {
   text-align: center;
@@ -232,7 +232,7 @@ label[for="ham-menu"] {
 
 .site-title {
   font-size: 32px;
-  font-family: serif;
+  font-family: sans-serif;
   font-weight: bold;
   color: #ffffff;
 }
@@ -245,7 +245,7 @@ label[for="ham-menu"] {
 }
 
 .social_icons ul li a img {
-  width: 25px;
+  width: 32px;
 }
 
 
@@ -347,7 +347,7 @@ label[for="ham-menu"] {
 
 .degree-block-left {   
   padding: 60px;
-  font-family: serif;
+  font-family: sans-serif;
 }
 
 .degree-block-left p {
@@ -356,7 +356,7 @@ label[for="ham-menu"] {
 
 .degree-block-left ul {
   margin-top: 40px;
-  font-size: 15px;
+  font-size: 18px;
   padding-left: 20px;
 }
 
@@ -367,16 +367,19 @@ label[for="ham-menu"] {
 .degree-block-left a {
   display: block;
   text-align: center;
-  font-size: 15px;
+  font-size: 17px;
   margin-top: 30px;
   color: blue;
 }
 .degree-block-left p a {
   display: inline;
+  font-size: 21px;
 }
 .degree-block-left ul li a {
   display: inline;
   color: #000000;
+  font-size: 17px;
+  line-height: 28px;
 }
 .degree-block-right img {
   width: 100%;
@@ -391,10 +394,19 @@ label[for="ham-menu"] {
   padding: 0px 60px;
 }
 
+#masters .degree-block-left ul li a {
+  padding: 0px;
+}
+
 #doctorate .degree-block-left a {
   text-align: left;
   padding-left: 10px;
 }
+
+
+
+
+
 
 .body hr {
   width: 70%;
@@ -413,7 +425,7 @@ label[for="ham-menu"] {
 }
 
 .online-submission-documents .submission {
-  background: url(../img/submission.jpg) no-repeat;
+  background: url(../img/submission-2.jpg) no-repeat;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -438,7 +450,7 @@ label[for="ham-menu"] {
   font-size: 32px;
   color: #000000;
   line-height: 30px;
-  font-family: serif;
+  font-family: sans-serif;
 }
 
 .online-submission-documents .submission .submission-wrapper a {
@@ -452,7 +464,7 @@ label[for="ham-menu"] {
   margin-top: 14px;
   margin-left: auto;
   margin-right: auto;
-  font-family: serif;
+  font-family: sans-serif;
   text-decoration: none;
 }
 
@@ -489,11 +501,11 @@ label[for="ham-menu"] {
 .info-block {
   position: relative;
   background: url(../img/banner_image.jpg) no-repeat;
-  background-position: right;
+  background-position: bottom;
   background-size: cover;
   height: 600px;
   width: 100%;
-  margin: 0 auto 70px;
+  margin: 0 auto;
 }
 
 .info-block .info-wrapper {
@@ -508,7 +520,7 @@ label[for="ham-menu"] {
   height: 420px;
   font-size: 16px;
   padding: 55px 40px 15px;
-  font-family: serif;
+  font-family: sans-serif;
 }
 
 .info-block .info-wrapper .info-block-title {
@@ -535,14 +547,14 @@ label[for="ham-menu"] {
 footer {
   background: #172d3a;
   padding: 40px 45px 20px;
-  margin-top: 30px;
+  margin-top: 0px;
   display: block;
 }
 
 footer .footer {
   font-size: 17px;
   color: #ffffff;
-  font-family: serif;
+  font-family: sans-serif;
 }
 
 footer .footer .footer-wrapper {
@@ -821,6 +833,9 @@ header .ham-menu .social_icons {
   .banner img {
     width: 80%;
   }
+  .banner-down-btn {
+    display: none;
+  }
 
   /* Degree blocks */
   .degree-block {
@@ -829,9 +844,11 @@ header .ham-menu .social_icons {
   .degree-block-left {
     padding: 20px 0px;
   }
-  .degree-block-left p {
+  .degree-block-left p,
+  .degree-block-left p a {
     font-size: 17px;
   }
+
   .degree-block-left ul, 
   .degree-block-left a {
     font-size: 16px;
@@ -887,6 +904,9 @@ header .ham-menu .social_icons {
   }
 
   /* footer */
+  footer {
+    margin-top: 30px;
+  }
   footer .footer .footer-wrapper {
     flex-direction: column;
     gap: 30px;
