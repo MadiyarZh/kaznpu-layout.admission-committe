@@ -559,6 +559,7 @@ label[for="ham-menu"] {
   font-size: 16px;
   padding: 55px 40px 15px;
   font-family: sans-serif;
+  border-radius: 6px;
 }
 
 .info-block .info-wrapper .info-block-title {
@@ -784,7 +785,7 @@ header .ham-menu .social_icons {
     line-height: 32px;
   }
   #doctorate .degree-block-left a {
-    text-align: center;
+    text-align: left;
   }
 
   .video-instructions .thumb-wrap {
@@ -908,6 +909,10 @@ header .ham-menu .social_icons {
   .online-submission-documents {
     height: 400px;
   }
+  .online-submission-documents .submission {
+    background: url('../img/submission-2.jpg') center top no-repeat fixed;
+    background-size: auto 100vh;
+  }
   .online-submission-documents .submission .submission-wrapper h4 {
     font-size: 21px;
   }
@@ -937,25 +942,30 @@ header .ham-menu .social_icons {
   /* Info block */
   .info-block {
     box-shadow: 0px 0px 30px -18px black;
-    background: none;
+    background: url(../img/KazNPU_imeni_Abaya.jpg) no-repeat;
+    background-position: bottom;
+    background-size: cover;
     height: 410px;
-    border-radius: 7px;
+    border-radius: 7px 7px 0px 0px;
     overflow: hidden;
+    position: relative;
+  }
+  .info-block .info-wrapper {
+    background: transparent;
   }
   .info-block .info-wrapper {
     right: 0;
     left: 0;
     top: 0;
     padding: 30px;
+    color: #ffffff;
+    margin-top: 10px;
   }
   .info-block .info-wrapper .info-block-title {
     font-size: 24px;
   }
 
   /* footer */
-  footer {
-    margin-top: 30px;
-  }
   footer .footer .footer-wrapper {
     flex-direction: column;
     gap: 30px;
