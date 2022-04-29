@@ -336,13 +336,19 @@ label[for="ham-menu"] {
   display: flex;
   align-items: center;
   background: #ffffff;
-  padding: 60px 0px;
+  padding: 37px 0px;
   min-height: 100vh;
 }
 
 .degree-block-left,
 .degree-block-right {
   width: 50%;
+}
+
+.degree-block-right img {
+  box-shadow: 0 0 5px rgb(0 0 0 / 50%);
+  border-radius: 25px;
+  overflow: hidden;
 }
 
 .degree-block-left {   
@@ -383,7 +389,7 @@ label[for="ham-menu"] {
   line-height: 28px;
   border-radius: 25px;
   background: #efefef6b;
-  padding: 5px 20px 5px 35px;
+  padding: 8px 20px 8px 20px;
   margin-bottom: 10px;
   width: 100%;
   display: flex;
@@ -421,7 +427,7 @@ label[for="ham-menu"] {
   /* padding-left: 10px; */
 }
 
-.degree-block-left ul {
+/* .degree-block-left ul {
   counter-reset: tidbit-counter;
 }
 .degree-block-left ul li a::before {
@@ -429,7 +435,7 @@ label[for="ham-menu"] {
   left: 15px;
   counter-increment: tidbit-counter;
   content: counter(tidbit-counter) ": ";
-}
+} */
 
 
 
@@ -478,7 +484,7 @@ label[for="ham-menu"] {
 }
 
 .online-submission-documents .submission .submission-wrapper h4 {
-  font-size: 32px;
+  font-size: 44px;
   color: #000000;
   line-height: 30px;
   font-family: sans-serif;
@@ -489,11 +495,11 @@ label[for="ham-menu"] {
   border-radius: 25px;
   background: blue;
   color: #ffffff !important;
-  padding: 10px 20px;
+  padding: 20px 40px;
   display: block;
   max-width: max-content;
   font-size: 16px;
-  margin-top: 14px;
+  margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
   font-family: sans-serif;
@@ -594,12 +600,20 @@ footer .footer {
   font-size: 17px;
   color: #ffffff;
   font-family: sans-serif;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 footer .footer .footer-wrapper {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  gap: 40px;
+}
+footer .footer .footer-wrapper ul {
+  text-align: center;
 }
 
 footer .footer .footer-wrapper ul li {
@@ -613,8 +627,10 @@ footer .footer .footer-wrapper p {
 
 footer .copyright {
   text-align: center;
-  margin-top: 36px;
   font-size: 15px;
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 40px;
 }
 
 header .ham-menu .social_icons {
