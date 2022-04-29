@@ -254,7 +254,7 @@ label[for="ham-menu"] {
 
 .banner {
   min-height: 100vh;
-  background: url(../img/banner-image.jpg) no-repeat;
+  background: url(../img/main_banner_img.JPG) no-repeat;
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -457,6 +457,9 @@ label[for="ham-menu"] {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-position: center center;
   height: 100%;
   width: 100%;
