@@ -655,39 +655,45 @@ header .ham-menu .social_icons {
 
 @keyframes slide-in-left {
   0% {
-    -webkit-transform: translateX(-100px);
     transform: translateX(-100px);
+    -webkit-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateX(0);
     transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
     opacity: 1;
   }
 }
 
 @keyframes slide-in-right {
   0% {
-    -webkit-transform: translateX(100px);
     transform: translateX(100px);
+    -webkit-transform: translateX(100px);
+    -ms-transform: translateX(100px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateX(0);
     transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
     opacity: 1;
   }
 }
 
 @keyframes fade-in-bottom {
   0% {
-    -webkit-transform: translateY(50px);
     transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+    -ms-transform: translateX(50px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateY(0);
     transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -ms-transform: translateX(0);
     opacity: 1;
   }
 }
@@ -950,5 +956,8 @@ header .ham-menu .social_icons {
   footer .footer .footer-wrapper {
     flex-direction: column;
     gap: 30px;
+  }
+  footer .footer .footer-wrapper ul {
+    text-align: center;
   }
 }
