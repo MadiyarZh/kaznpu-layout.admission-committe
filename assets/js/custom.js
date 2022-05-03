@@ -1,4 +1,5 @@
 $(document).ready(function (){
+
     $(".banner-down-btn").click(function (){
 
         var w = $(window).width(); // Получаем ширину окна
@@ -35,12 +36,20 @@ $(document).ready(function (){
         
     });
     
-    // modal 
+    // Modal 
     $(".degree-block-left ul li a").click(function (){
       $('#'+$(this).data('target')).css('display', 'block');
     });
     $(".modal-content .close").click(function (){
       $('.modal').css('display', 'none');
+    });
+
+    // 3d tooor modal
+    $(".info-block .info-wrapper .link-btn").click(function (){
+      $('.toor').css('display', 'block');
+    });
+    $(".toor .close").click(function (){
+      $('.toor').css('display', 'none');
     });
 });
 

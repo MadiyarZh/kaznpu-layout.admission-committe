@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Приемная комиссия</title>
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 <body>
     <header class="header">
@@ -107,24 +110,71 @@
     <div class="body">
         <!-- Главный баннер -->
         <div class="banner">
-            <div class="background-banner"></div>
-            <div class="caption">
-              <div class="info fade-in-banner">
-                <h1>Приемная комиссия ждет вас!</h1>
-                <p class="date">
-                  С 20 июня - 25 августа
-                      <br>
-                  ПН - ПТ: 9:00 - 18:00
-                      <br>
-                  СБ: 9:00 - 13:00
-                </p>
-                <p class="address">
-                  Толе би, 31
-                </p>
-              </div>
-              <a class="banner-down-btn animate__animated animate__bounce animate__faster" href="#">
-                <img  src="assets/img/icons/arrow-down.png" alt="arrow-down">
-              </a>
+            
+            <!-- <div class="banner-item">
+                <div class="background-banner"></div>
+                <div class="caption">
+                    <div class="info fade-in-banner">
+                      <h1>Приемная комиссия ждет вас!</h1>
+                      <p class="date">
+                        С 20 июня - 25 августа
+                            <br>
+                        ПН - ПТ: 9:00 - 18:00
+                            <br>
+                        СБ: 9:00 - 13:00
+                      </p>
+                      <p class="address">
+                        Толе би, 31
+                      </p>
+                    </div>
+                    <a class="banner-down-btn animate__animated animate__bounce animate__faster" href="#">
+                      <img  src="assets/img/icons/arrow-down.png" alt="arrow-down">
+                    </a>
+                </div>
+            </div>
+
+            <div class="banner-item second">
+                <div class="background-banner"></div>
+                <div class="caption">
+                    <div class="info fade-in-banner">
+                      <h1>Приемная комиссия ждет вас!</h1>
+                      <p class="date">
+                        С 20 июня - 25 августа
+                            <br>
+                        ПН - ПТ: 9:00 - 18:00
+                            <br>
+                        СБ: 9:00 - 13:00
+                      </p>
+                      <p class="address">
+                        Толе би, 31
+                      </p>
+                    </div>
+                    <a class="banner-down-btn animate__animated animate__bounce animate__faster" href="#">
+                      <img  src="assets/img/icons/arrow-down.png" alt="arrow-down">
+                    </a>
+                </div>
+            </div> -->
+            
+            <div class="banner-item third">
+                <div class="background-banner"></div>
+                <div class="caption">
+                    <div class="info fade-in-banner">
+                      <h1>Приемная комиссия ждет вас!</h1>
+                      <p class="date">
+                        С 20 июня - 25 августа
+                            <br>
+                        ПН - ПТ: 9:00 - 18:00
+                            <br>
+                        СБ: 9:00 - 13:00
+                      </p>
+                      <p class="address">
+                        Толе би, 31
+                      </p>
+                    </div>
+                    <a class="banner-down-btn animate__animated animate__bounce animate__faster" href="#">
+                      <img  src="assets/img/icons/arrow-down.png" alt="arrow-down">
+                    </a>
+                </div>
             </div>
         </div>
         <!-- Бакалавр -->
@@ -415,14 +465,21 @@
                 <p>
                     <strong>Казахский национальный педагогический университет имени Абая</strong> (КазНПУ) - первое высшее учебное заведение Казахстана. Основано в 1928 году.
                 </p>
-                <a class="btn link-btn" href="https://kaznpu.kz/ru/1733/page/">Виртуальный тур</a>
+                <a class="btn link-btn">Виртуальный тур</a>
             </div>
+        </div>
+        <div class="toor">
+            <span class="close">&times;</span>
+            <iframe src="https://kaznpu.kz/VirtualTour/index_ru.html" height="500" width="700" scrolling="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
         </div>
     </div>
 
     <!-- Footer -->
     <footer>
         <div class="footer">
+            <div class="footer-map">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3bab500bce0d28f9140da461854f479dd313fd980eec2c187f01b4e062c14e33&amp;source=constructor" width="500" height="399" frameborder="0"></iframe>
+            </div>
             <div class="footer-wrapper">
                 <p>
                     Толе би, 31
@@ -446,9 +503,6 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-map">
-                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3bab500bce0d28f9140da461854f479dd313fd980eec2c187f01b4e062c14e33&amp;source=constructor" width="500" height="399" frameborder="0"></iframe>
-            </div>
             <div class="copyright">
                 © 2022 Казахский Национальный педагогический университет имени Абая
             </div>
@@ -456,6 +510,31 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    
     <script src="assets/js/custom.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.banner').owlCarousel({
+                loop:true, //Зацикливаем слайдер
+                margin:10, //Отступ от картино если выводите больше 1
+                nav:false, //Отключил навигацию
+                autoplay:true, //Автозапуск слайдера
+                smartSpeed:1000, //Время движения слайда
+                autoplayTimeout:2000, //Время смены слайда
+                responsive:{ //Адаптация в зависимости от разрешения экрана
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:1
+                    },
+                    1000:{
+                        items:1
+                    }
+                }
+            });
+        });
+    </script>
+    <script src="assets/js/owl.carousel.min.js"></script>
 </body>
 </html>
