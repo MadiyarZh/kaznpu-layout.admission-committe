@@ -71,7 +71,7 @@ label[for="ham-menu"] {
   border-radius: 15px;
 }
 .ham-menu {
-  width: 350px;
+  width: 400px;
   height: 100%;
   position: fixed;
   top: 0;
@@ -245,7 +245,7 @@ label[for="ham-menu"] {
 }
 
 .social_icons ul li a img {
-  width: 32px;
+  width: 36px;
 }
 
 
@@ -736,7 +736,7 @@ header .ham-menu .social_icons {
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 100; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
