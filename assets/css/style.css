@@ -982,11 +982,18 @@ header .ham-menu .social_icons {
   }
 
   /* footer */
+  footer .footer {
+    justify-content: center;
+  }
   footer .footer .footer-wrapper {
     flex-direction: column;
     gap: 30px;
   }
   footer .footer .footer-wrapper ul {
     text-align: center;
+  }
+  footer .footer .footer-wrapper iframe {
+    width: 100%;
+    margin-top: 30px;
   }
 }
