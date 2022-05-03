@@ -397,6 +397,8 @@ label[for="ham-menu"] {
   text-align: left;
   position: relative;
   box-shadow: 0 0 5px rgb(0 0 0 / 50%);
+  cursor: pointer;
+  text-decoration: underline;
 }
 .degree-block-left ul li a:hover {
   transform: scale(1.01);
@@ -728,6 +730,93 @@ header .ham-menu .social_icons {
 }
 
 
+/* Modal style */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 70px 50px;
+  border: 1px solid #888;
+  border-radius: 7px;
+  width: 70%;
+  position: relative;
+  font-size: 16px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  position: absolute;
+  right: 50px;
+  top: 30px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* .table {
+	width: 100%;
+  margin-top: 40px;
+	border: 1px solid #dddddd;
+	border-collapse: collapse; 
+}
+.table th {
+	font-weight: bold;
+	padding: 5px;
+	background: #efefef;
+	border: 1px solid #dddddd;
+}
+.table td {
+	border: 1px solid #dddddd;
+	padding: 10px;
+} */
+
+.table {
+	width: 100%;
+  margin-top: 40px;
+  border: 1px solid #dddddd;
+}
+
+.table tr {
+  border: 1px solid #dddddd;
+  padding: 5px;
+}
+
+.table th, table td {
+  padding: 10px;
+  text-align: center;
+  border-right: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #efefef;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
 
 
 /* Adaptive */
@@ -897,6 +986,51 @@ header .ham-menu .social_icons {
   .banner-down-btn {
     display: none;
   }
+
+  /* Modal */
+
+  .modal-content {
+    width: 90%;
+    padding: 50px 10px;
+    font-size: 14px;
+  }
+
+  .close {
+    right: 10px;
+    top: 10px;
+  }
+
+  .table {
+    border: 0;
+  }
+  .table thead {
+    display: none;
+  }
+  .table tr {
+    margin-bottom: 10px;
+    display: block;
+    border-bottom: 2px solid #ddd;
+  }
+  .table td {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    font-size: 13px;
+    text-align: right;
+    border-bottom: 1px dotted #ccc;
+    border-right: 1px solid transparent;
+  }
+  .table td:last-child {
+    border-bottom: 0;
+  }
+  .table td:before {
+    content: attr(data-label);
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: left;
+  }
+
 
   /* Degree blocks */
   .degree-block {
