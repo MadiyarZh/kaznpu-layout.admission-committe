@@ -397,6 +397,7 @@ label[for="ham-menu"] {
 .degree-block-left p a {
   display: inline;
   font-size: 21px;
+  cursor: pointer;
 }
 .degree-block-left ul li a {
   display: inline;
@@ -421,8 +422,17 @@ label[for="ham-menu"] {
   transition: 0.15s;
 }
 
+#myModal_bac_direction .modal-content h2 {
+  margin-top: 40px;
+}
+
+#myModal_bac_direction .modal-content h2:nth-child(1) {
+  margin-top: 0px !important;
+}
+
 .list-of-doc-btn {
   margin-top: 30px !important;
+  cursor: pointer;
 } 
 .degree-block-right img {
   width: 100%;
@@ -823,14 +833,58 @@ header .ham-menu .social_icons {
   font-size: 16px;
 }
 
+.modal-content h3 {
+  text-align: right;
+  margin-top: 50px;
+}
+
+.modal-content h4 {
+  margin: 40px auto;
+  width: 80%;
+  text-align: center;
+}
+
+.modal-content p {
+  text-align: justify;
+}
+
+.modal-content table tbody tr:nth-child(2n) {
+  background-color: #efefefb5;
+}
+
+.modal-content table tbody tr td:last-child {
+  font-weight: bold;
+}
+
+.modal-content table tbody tr .third-width {
+  max-width: 300px;
+}
+
+#myModal_mas_documents .modal-content table tbody tr:nth-child(2n) {
+  background: transparent;
+}
+
+#myModal_mas_documents .modal-content table tbody tr td:last-child {
+  font-weight: 200;
+}
+#myModal_mas_documents .modal-content table tbody td {
+  border: 1px solid #ddd;
+}
+
 /* The Close Button */
 .close {
   color: #aaaaaa;
   position: absolute;
   right: 50px;
-  top: 30px;
+  top: 20px;
   font-size: 36px;
   font-weight: bold;
+}
+
+.required-text {
+  font-size: 15px;
+  width: 80%;
+  margin: 20px auto;
 }
 
 .close:hover,
@@ -839,23 +893,6 @@ header .ham-menu .social_icons {
   text-decoration: none;
   cursor: pointer;
 }
-
-/* .table {
-	width: 100%;
-  margin-top: 40px;
-	border: 1px solid #dddddd;
-	border-collapse: collapse; 
-}
-.table th {
-	font-weight: bold;
-	padding: 5px;
-	background: #efefef;
-	border: 1px solid #dddddd;
-}
-.table td {
-	border: 1px solid #dddddd;
-	padding: 10px;
-} */
 
 .table {
 	width: 100%;
@@ -985,6 +1022,41 @@ header .ham-menu .social_icons {
     height: 500px;
   }
 
+  .modal-content table tbody tr .third-width {
+    max-width: max-content;
+  }
+
+  .table {
+    border: 0;
+  }
+  .table thead {
+    display: none;
+  }
+  .table tr {
+    margin-bottom: 10px;
+    display: block;
+    border-bottom: 2px solid #ddd;
+  }
+  .table td {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    font-size: 13px;
+    text-align: right;
+    border-bottom: 1px dotted #ccc;
+    border-right: 1px solid transparent;
+  }
+  .table td:last-child {
+    border-bottom: 0;
+  }
+  .table td:before {
+    content: attr(data-label);
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: left;
+  }
+
 }
 
 /* SM */
@@ -1084,35 +1156,8 @@ header .ham-menu .social_icons {
     top: 10px;
   }
 
-  .table {
-    border: 0;
-  }
-  .table thead {
-    display: none;
-  }
-  .table tr {
-    margin-bottom: 10px;
-    display: block;
-    border-bottom: 2px solid #ddd;
-  }
   .table td {
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
-    font-size: 13px;
-    text-align: right;
-    border-bottom: 1px dotted #ccc;
-    border-right: 1px solid transparent;
-  }
-  .table td:last-child {
-    border-bottom: 0;
-  }
-  .table td:before {
-    content: attr(data-label);
-    float: left;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-align: left;
+    font-size: 12px;
   }
 
 

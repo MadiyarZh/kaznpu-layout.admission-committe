@@ -37,7 +37,7 @@ $(document).ready(function (){
     });
     
     // Modal 
-    $(".degree-block-left ul li a").click(function (){
+    $(".degree-block-left a").click(function (){
       $('#'+$(this).data('target')).css('display', 'block');
     });
     $(".modal-content .close").click(function (){
