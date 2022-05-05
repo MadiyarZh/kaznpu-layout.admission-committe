@@ -904,10 +904,6 @@ header .ham-menu .social_icons {
   background-color: #efefefb5;
 }
 
-.modal-content table tbody tr td:last-child {
-  font-weight: bold;
-}
-
 .modal-content table tbody tr .third-width {
   max-width: 300px;
 }
