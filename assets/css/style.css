@@ -74,7 +74,8 @@ label[for="ham-menu"] {
 }
 .ham-menu {
   width: 400px;
-  height: 100%;
+  height: max-content;
+  min-height: 100vh;
   position: fixed;
   top: 0;
   visibility: hidden;
@@ -113,109 +114,41 @@ label[for="ham-menu"] {
   margin: 0 5px;
 }
 
-.switch > a > span {
-  position: absolute;
-  top: 11px;
-  pointer-events: none;
-  font-family: 'Helvetica', Arial, sans-serif;
-  font-weight: bold;
-  font-size: 13px;
-  text-transform: uppercase;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, .06);
-  width: 50%;
-  text-align: center;
+.switch_lang {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  background: rgb(24 24 24 / 69%);
+  border-radius: 30px;
+  border: 3px solid #FFF;
 }
 
-input.check-toggle-round-flat:checked ~ a > .off {
-  color: #000000;
+.switch a .off {
+  padding: 7px;
+  color: #ffffff;
 }
 
-input.check-toggle-round-flat:checked ~ a > .on {
-  color: #fff;
+.switch a .on {
+  color: #000;
+  background: #ffffff;
+  border-radius: 25px;
+  padding: 7px;
 }
 
-.switch > a > span.on {
-  left: 0;
-  padding-left: 9px;
-  color: #181819;
+.switch a {
+  font-size: 14px !important;
+  padding: 5px;
+  text-decoration: none;
+  line-height: 26px !important;
 }
 
-.switch > a {
-  font-size: inherit !important;
+.switch a:first-child {
+  padding: 5px 2px 5px 2px;
 }
 
-.switch > a > span.off {
-  right: 0;
-  padding-right: 4px;
-  color: #fff;
-}
-
-.check-toggle {
-  position: absolute;
-  margin-left: -9999px;
-  visibility: hidden;
-}
-.check-toggle + label {
-  display: block;
-  position: relative;
-  cursor: pointer;
-  outline: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-input.check-toggle-round-flat + label {
-  padding: 2px;
-  width: 100px;
-  height: 35px;
-  background-color: #ffffff;
-  -webkit-border-radius: 60px;
-  -moz-border-radius: 60px;
-  -ms-border-radius: 60px;
-  -o-border-radius: 60px;
-  border-radius: 60px;
-}
-input.check-toggle-round-flat + label:before, input.check-toggle-round-flat + label:after {
-  display: block;
-  position: absolute;
-  content: "";
-}
-
-input.check-toggle-round-flat + label:before {
-  top: 2px;
-  left: 2px;
-  bottom: 2px;
-  right: 2px;
-  background-color: #000000fc;
-  -webkit--moz-border-radius: 60px;
-  -ms-border-radius: 60px;
-  -o-border-radius: 60px;
-  border-radius: 60px;
-}
-input.check-toggle-round-flat + label:after {
-  top: 4px;
-  left: 4px;
-  bottom: 4px;
-  width: 48px;
-  background-color: #fff;
-  -webkit-border-radius: 52px;
-  -moz-border-radius: 52px;
-  -ms-border-radius: 52px;
-  -o-border-radius: 52px;
-  border-radius: 52px;
-  -webkit-transition: margin 0.2s;
-  -moz-transition: margin 0.2s;
-  -o-transition: margin 0.2s;
-  transition: margin 0.2s;
-}
-
-input.check-toggle-round-flat:checked + label {
-}
-
-input.check-toggle-round-flat:checked + label:after {
-  margin-left: 44px;
+.switch a:last-child {
+  padding: 5px 2px 5px 2px;
 }
 
 
@@ -785,7 +718,12 @@ footer .footer {
   display: flex;
   flex-wrap: wrap;
 }
-
+footer .footer a {
+  font-size: 17px;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+}
 footer .footer .footer-wrapper {
   display: flex;
   align-items: center;
@@ -983,6 +921,20 @@ header .ham-menu .social_icons {
 }
 #myModal_mas_documents .modal-content table tbody td {
   border: 1px solid #ddd;
+}
+
+#myModal_bac_documents ul li,
+#myModal_mas_documents ul li,
+#myModal_doc_documents ul li {
+  padding: 0px 10px 0px 15px;
+  margin: 10px 0px;
+}
+
+#myModal_bac_documents ul strong,
+#myModal_mas_documents ul strong,
+#myModal_doc_documents ul strong {
+  margin-bottom: 20px;
+  display: block;
 }
 
 /* The Close Button */
@@ -1446,8 +1398,11 @@ header .ham-menu .social_icons {
     line-height: 24px;
     margin: 10px 0px;
   }
+  .switch .switch_lang {
+    margin-top: 20px;
+  }
   header .ham-menu .social_icons {
-    margin-top: 70px;
+    margin-top: 50px;
   }
 
   /* Главная баннер */
@@ -1477,6 +1432,10 @@ header .ham-menu .social_icons {
 
   .banner>.banner-item>.caption>a {
     width: 300px;
+  }
+
+  .animated-button1 {
+    padding: 10px 30px !important;
   }
 
   /* Modal */
@@ -1617,8 +1576,8 @@ header .ham-menu .social_icons {
 
   /* Phone animation */
   .btn-call {
-    right: 30px;
-    bottom: 30px;
+    right: 20px;
+    bottom: 20px;
   }
 }
 
