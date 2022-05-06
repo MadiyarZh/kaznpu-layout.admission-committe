@@ -1492,8 +1492,7 @@ header .ham-menu .social_icons {
     height: 400px;
   }
   .online-submission-documents .submission {
-    background: url('../img/submission-2.jpg') center top no-repeat fixed;
-    background-size: auto 100vh;
+    background-attachment: inherit;
   }
   .online-submission-documents .submission .submission-wrapper h4 {
     font-size: 21px;
