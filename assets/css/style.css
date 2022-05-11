@@ -1576,6 +1576,17 @@ header .ham-menu .social_icons {
   }
 }
 
+/* SM height */
+@media (max-height: 450px) {
+  .banner,
+  .banner .banner-item {
+    min-height: 500px;
+  }
+  .banner>.banner-item>.caption>a {
+    position: initial;
+  }
+}
+
 
 
 /* Banner button animation */
