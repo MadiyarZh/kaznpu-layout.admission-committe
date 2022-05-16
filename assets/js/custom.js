@@ -51,6 +51,15 @@ $(document).ready(function (){
     $(".toor .close").click(function (){
       $('.toor').css('display', 'none');
     });
+
+    $('.video_galery_slider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      dots: true,
+    });
+
 });
 
 const scrollElements = document.querySelectorAll(".js-scroll");

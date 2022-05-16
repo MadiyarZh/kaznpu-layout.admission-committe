@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Қабылдау комиссиясы</title>
-    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="../assets/css/font.css">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
@@ -72,7 +74,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="https://t.me/AbaiUniversity" target="_blank">
+                            <a href="https://t.me/abaiuniversity_bot" target="_blank">
                                 <img src="../assets/img/icons/telegram.png" alt="telegram-icon">
                             </a>
                         </li>
@@ -106,7 +108,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://t.me/AbaiUniversity" target="_blank">
+                    <a href="https://t.me/abaiuniversity_bot" target="_blank">
                         <img src="../assets/img/icons/telegram.png" alt="telegram-icon">
                     </a>
                 </li>
@@ -145,50 +147,7 @@
                       </a>
                 </div>
             </div>
-            
-            <!-- <div class="banner-item second">
-                <div class="background-banner"></div>
-                <div class="caption">
-                    <div class="info fade-in-banner">
-                      <h1>Приемная комиссия ждет вас!</h1>
-                      <p class="date">
-                        С 20 июня - 25 августа
-                            <br>
-                        ПН - ПТ: 9:00 - 18:00
-                            <br>
-                        СБ: 9:00 - 13:00
-                      </p>
-                      <p class="address">
-                        Толе би, 31
-                      </p>
-                    </div>
-                    <a class="banner-down-btn animate__animated animate__bounce animate__faster" href="#">
-                      <img  src="assets/img/icons/arrow-down.png" alt="arrow-down">
-                    </a>
-                </div>
-            </div>
-            
-            <div class="banner-item third">
-                <div class="background-banner"></div>
-                <div class="caption">
-                    <div class="info fade-in-banner">
-                      <h1>Приемная комиссия ждет вас!</h1>
-                      <p class="date">
-                        С 20 июня - 25 августа
-                            <br>
-                        ПН - ПТ: 9:00 - 18:00
-                            <br>
-                        СБ: 9:00 - 13:00
-                      </p>
-                      <p class="address">
-                        Толе би, 31
-                      </p>
-                    </div>
-                    <a class="banner-down-btn animate__animated animate__bounce animate__faster" href="#">
-                      <img  src="assets/img/icons/arrow-down.png" alt="arrow-down">
-                    </a>
-                </div>
-            </div> -->
+
         </div>
 
 
@@ -1693,6 +1652,19 @@
 
         </div>
 
+        <!-- Video gallery -->
+        <div class="video_galery">
+            <h4>
+                Видеогалерея
+            </h4>
+            <div class="video_galery_slider">
+                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/G6lHWwsT-kU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/yXvatSCB8uE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              
+            </div>
+        </div>
+
         <!-- Онлайн подача документов -->
         <div id="online-submission" class="online-submission-documents">
             <div class="submission">
@@ -1777,32 +1749,21 @@
         </div>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <!-- ✅ load jQuery ✅ -->
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+    ></script>
+
+    <!-- ✅ load Slick ✅ -->
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    ></script>
     
     <script src="../assets/js/custom.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.banner').owlCarousel({
-                loop:true, //Зацикливаем слайдер
-                margin:10, //Отступ от картино если выводите больше 1
-                nav:false, //Отключил навигацию
-                autoplay:true, //Автозапуск слайдера
-                smartSpeed:1000, //Время движения слайда
-                autoplayTimeout:2000, //Время смены слайда
-                responsive:{ //Адаптация в зависимости от разрешения экрана
-                    0:{
-                        items:1
-                    },
-                    600:{
-                        items:1
-                    },
-                    1000:{
-                        items:1
-                    }
-                }
-            });
-        });
-    </script>
-    <script src="../assets/js/owl.carousel.min.js"></script>
 </body>
 </html>

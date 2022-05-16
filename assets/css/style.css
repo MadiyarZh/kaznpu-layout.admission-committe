@@ -522,7 +522,51 @@ label[for="ham-menu"] {
   margin: 0px auto;
 }
 
+/* Video Galerry */
+.video_galery {
+  margin-top: 30px;
+  width: 80%; 
+  margin: 0 auto;
+  height: 650px;
+}
+
+.video_galery h4 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.video_galery .video_galery_slider {
+  margin-top: 40px;
+}
+
+.video_galery iframe {
+  height: 500px;
+
+}
+
+.video_galery .slick-prev:before, 
+.video_galery .slick-next:before {
+  font-size: 42px;
+  color: #1515ff;
+}
+
+.video_galery .slick-prev {
+  left: -50px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #1515ff;
+}
+
+.slick-dots li button:before {
+  color: #1515ff;
+  font-size: 13px;
+}
 /* Онлайн подача документов */
+
+#online-submission {
+  margin-top: 40px;
+}
 
 .online-submission-documents {
   height: 500px;
@@ -1282,6 +1326,10 @@ header .ham-menu .social_icons {
     text-align: left;
   }
 
+  #doctorate .degree-block-left .list-of-doc-btn {
+    text-align: center;
+  }
+
   /* Info block */
   .info-block {
     background-position: center;
@@ -1335,6 +1383,10 @@ header .ham-menu .social_icons {
     text-transform: uppercase;
     font-weight: bold;
     text-align: left;
+  }
+
+  .video-instructions .thumb-wrap iframe {
+    width: 90%;
   }
 
 }
@@ -1400,6 +1452,7 @@ header .ham-menu .social_icons {
   header .ham-menu .social_icons {
     margin-top: 50px;
   }
+  
 
   /* Главная баннер */
   .banner {
@@ -1485,6 +1538,27 @@ header .ham-menu .social_icons {
   }
   .body hr {
     width: 50%;
+  }
+
+  /* Video galery */
+
+  .video_galery {
+    height: 480px;
+    width: 90%;
+  }
+
+  .video_galery h4 {
+    font-size: 24px;
+  }
+
+  .video_galery iframe {
+    height: 340px;
+    width: 100%;
+  }
+
+  .video_galery .slick-prev:before, 
+  .video_galery .slick-next:before {
+    display: none;
   }
 
   /* online-submission */
@@ -1574,6 +1648,9 @@ header .ham-menu .social_icons {
     right: 20px;
     bottom: 20px;
   }
+  .banner>.banner-item>.caption>a {
+    position: initial;
+  }
 }
 
 /* SM height */
@@ -1582,9 +1659,7 @@ header .ham-menu .social_icons {
   .banner .banner-item {
     min-height: 500px;
   }
-  .banner>.banner-item>.caption>a {
-    position: initial;
-  }
+  
 }
 
 
@@ -3284,4 +3359,9 @@ header .ham-menu .social_icons {
     -webkit-transform: translateY(100%);
             transform: translateY(100%);
   }
+}
+
+#editMe,
+.blog.js-powrMark.pad-m.pad-top-l.powrMark {
+  display: none !important;
 }
