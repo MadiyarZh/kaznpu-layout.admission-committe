@@ -541,7 +541,10 @@ label[for="ham-menu"] {
 
 .video_galery iframe {
   height: 500px;
-
+  margin: 10px 20px;
+  box-shadow: 0 0 5px 1px rgb(0 0 0 / 50%);
+  border-radius: 25px;
+  overflow: hidden;
 }
 
 .video_galery .slick-prev:before, 
@@ -1554,6 +1557,7 @@ header .ham-menu .social_icons {
   .video_galery iframe {
     height: 340px;
     width: 100%;
+    margin: 10px 10px;
   }
 
   .video_galery .slick-prev:before, 

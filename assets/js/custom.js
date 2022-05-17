@@ -53,11 +53,22 @@ $(document).ready(function (){
     });
 
     $('.video_galery_slider').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
+      infinite: true,
+      slidesToShow: 2,
+      slidesToScroll: 2,
       autoplay: true,
+      centerPadding: '40px',
       autoplaySpeed: 2000,
       dots: true,
+      responsive: [
+        {
+          breakpoint: 1040,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        }
+      ]
     });
 
 });
