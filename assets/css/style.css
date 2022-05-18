@@ -980,6 +980,34 @@ header .ham-menu .social_icons {
   display: block;
 }
 
+.language-exame {
+  margin-left: 20px;
+}
+
+.language-exame li strong {
+  margin-bottom: -10px !important;
+}
+.language-exame li {
+  margin-bottom: 20px !important;
+}
+
+#myModal_bac_documents ul li, 
+#myModal_mas_documents ul li, 
+#myModal_doc_documents ul li {
+  margin: 10px 0px 10px 20px;
+  list-style-type: disc;
+}
+
+#myModal_bac_documents p, 
+#myModal_mas_documents p, 
+#myModal_doc_documents p {
+  margin-top: 30px;
+}
+
+.language-exame li {
+  list-style-type: none !important;
+}
+
 /* The Close Button */
 .close {
   color: #aaaaaa;
