@@ -1067,8 +1067,8 @@ header .ham-menu .social_icons {
   width: 60px;
   text-align: center;
   position: fixed;
-  right: 50px;
-  bottom: 50px;
+  right: 25px;
+  bottom: 25px;
   z-index: 999;
   transition: .3s;
   -webkit-animation: hoverWave linear 1s infinite;
@@ -1077,6 +1077,22 @@ header .ham-menu .social_icons {
   justify-content: center;
   align-items: center;
   text-decoration: none;
+}
+
+.btn-call.telegram {
+  bottom: 100px;
+  background: #fff;
+  border: 2px solid #0088cc;
+}
+
+.btn-call.zoom {
+  bottom: 180px;
+  border: 2px solid #ffffffe3;
+  background: #2d8cff;
+}
+
+.btn-call.telegram .btn-call__ico {
+  color: #0088cc;
 }
 
 .btn-call__ico {
@@ -1099,6 +1115,19 @@ header .ham-menu .social_icons {
 
 .btn-call:hover .btn-call__ico {
   color: #0101ffeb;
+}
+
+.btn-call.telegram:hover {
+  border-color: transparent;
+}
+
+.btn-call.telegram:hover .btn-call__ico {
+  color: #0088cc;
+ 
+}
+
+.btn-call.zoom:hover .btn-call__ico {
+  color: #2770c7;
 }
 
 @-webkit-keyframes hoverWave {
