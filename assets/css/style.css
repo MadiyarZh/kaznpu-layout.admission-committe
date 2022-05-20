@@ -497,10 +497,10 @@ label[for="ham-menu"] {
   padding: 0px;
 } */
 
-#doctorate .degree-block-left a {
+/* #doctorate .degree-block-left a {
   text-align: left;
-  /* padding-left: 10px; */
-}
+  padding-left: 10px;
+} */
 
 /* .degree-block-left ul {
   counter-reset: tidbit-counter;
@@ -513,8 +513,31 @@ label[for="ham-menu"] {
 } */
 
 
+.degree-block-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 20px;
+  gap: 15px;
+  margin-top: 40px;
+}
 
+.degree-block-left .list-of-doc-btn {
+  padding: 20px 35px;
+  font-size: 17px;
+  line-height: 20px;
+  border-radius: 0.3rem !important;
+  margin-top: 0px !important;
+  color: #0072ff !important;
+  background-color: rgba(102, 170, 255, 0.15) !important;
+  border-color: rgba(102, 170, 255, 0.15) !important;
+}
 
+.degree-block-left .list-of-doc-btn:hover {
+  color: #005bcc !important;
+  background-color: #529fff !important;
+  border-color: #338eff !important;
+}
 
 
 .body hr {
@@ -908,7 +931,7 @@ header .ham-menu .social_icons {
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 100; /* Sit on top */
+  z-index: 1000; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   padding-bottom: 20px;
   left: 0;
@@ -1058,8 +1081,8 @@ header .ham-menu .social_icons {
 
 /* Phone animation */
 .btn-call {
-  background: #0101ffeb;
-  border: 2px solid #0101ffe3;
+  background: #0072ff;
+  border: 2px solid #0072ff;
   border-radius: 50%;
   box-shadow: 0 8px 10px rgba(56, 163, 253, 0.3);
   cursor: pointer;
@@ -1114,7 +1137,7 @@ header .ham-menu .social_icons {
 }
 
 .btn-call:hover .btn-call__ico {
-  color: #0101ffeb;
+  color: #0072ff;
 }
 
 .btn-call.telegram:hover {
@@ -1382,13 +1405,13 @@ header .ham-menu .social_icons {
   .degree-block-left ul li {
     line-height: 32px;
   }
-  #doctorate .degree-block-left a {
+  /* #doctorate .degree-block-left a {
     text-align: left;
-  }
+  } */
 
-  #doctorate .degree-block-left .list-of-doc-btn {
+  /* #doctorate .degree-block-left .list-of-doc-btn {
     text-align: center;
-  }
+  } */
 
   /* Info block */
   .info-block {
@@ -1598,6 +1621,10 @@ header .ham-menu .social_icons {
   }
   .body hr {
     width: 50%;
+  }
+
+  .degree-block-btns {
+    flex-direction: column;
   }
 
   /* Video galery */
