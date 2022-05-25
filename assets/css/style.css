@@ -481,6 +481,7 @@ label[for="ham-menu"] {
     text-decoration: none;
     float: right;
     margin-right: 15px;
+    border-radius: 0.3rem !important;
 }
 .myModal-btn:hover {
     color: #005bcc !important;
