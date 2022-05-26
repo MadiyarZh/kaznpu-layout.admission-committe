@@ -469,6 +469,26 @@ label[for="ham-menu"] {
   transition: 0.15s;
 }
 
+.myModal-btn {
+    margin-top: 20px;
+    display: inline-block;
+    width: max-content;
+    padding: 5px 10px;
+    background: aliceblue;
+    color: #0072ff !important;
+    background-color: rgba(102, 170, 255, 0.15) !important;
+    border-color: rgba(102, 170, 255, 0.15) !important;
+    text-decoration: none;
+    float: right;
+    margin-right: 15px;
+    border-radius: 0.3rem !important;
+}
+.myModal-btn:hover {
+    color: #005bcc !important;
+    background-color: #529fff !important;
+    border-color: #338eff !important;
+}
+
 #myModal_bac_direction .modal-content h2 {
   margin-top: 40px;
 }
