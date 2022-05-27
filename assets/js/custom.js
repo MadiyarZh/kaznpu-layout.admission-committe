@@ -71,6 +71,23 @@ $(document).ready(function (){
       ]
     });
 
+    // $(function() {
+    //   var elementClicked;
+    //   $('.zoom').click(function() {
+    //     elementClicked = true;
+        
+    //   });
+    //   if( elementClicked != true ) {
+    //     $('.zoom-links').css('display', 'none');
+    //     $('.zoom-links').css('opacity', '0');
+    //     $('.zoom-links').css('visibility',  'hidden');
+    //   }else{
+    //     $('.zoom-links').css('display', 'flex');
+    //     $('.zoom-links').css('opacity', '1');
+    //     $('.zoom-links').css('visibility',  'visible');
+    //   }
+    // });
+
 });
 
 const scrollElements = document.querySelectorAll(".js-scroll");
