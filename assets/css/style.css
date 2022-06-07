@@ -1642,8 +1642,15 @@ header .ham-menu .social_icons {
 
   .modal-content {
     width: 90%;
-    padding: 50px 10px;
+    padding: 50px 15px;
     font-size: 14px;
+    overflow-wrap: break-word;
+  }
+
+  #myModal_bac_documents .modal-content,
+  #myModal_mas_documents .modal-content,
+  #myModal_doc_documents .modal-content {
+    padding: 60px 15px 70px;
   }
 
   .close {
