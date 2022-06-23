@@ -3524,3 +3524,8 @@ header .ham-menu .social_icons {
 .blog.js-powrMark.pad-m.pad-top-l.powrMark {
   display: none !important;
 }
+
+#myModal_bac_admission_rules ul li {
+	padding-left: 15px;
+    	margin: 5px 0px;
+}
