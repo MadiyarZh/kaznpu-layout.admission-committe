@@ -3525,7 +3525,28 @@ header .ham-menu .social_icons {
   display: none !important;
 }
 
-#myModal_bac_admission_rules ul li {
+#myModal_bac_admission_rules ul li,
+#online-ped-test ul li {
 	padding-left: 15px;
-    	margin: 5px 0px;
+  margin: 5px 0px;
+}
+
+.modal-content ul li {
+  overflow-wrap: break-word;
+}
+
+#online-ped-test ul li {
+  margin: 10px 0px 10px 20px;
+  list-style-type: disc;
+}
+
+#foreign-students ul li {
+  margin: 10px 0px 10px 20px;
+  list-style-type: decimal;
+}
+
+#foreign-students h4 {
+  margin: 10px auto;
+  width: 100%;
+  text-align: left;
 }
